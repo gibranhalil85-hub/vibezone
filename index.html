@@ -116,7 +116,7 @@
       <div class="brand-sub">watch trending viral video every day.</div>
     </div>
 
-    <!-- NATIVE BANNER (Format Lengkap Sesuai Permintaan) -->
+    <!-- NATIVE BANNER -->
     <div class="ads-card">
       <div class="ads-label">Recommended Videos</div>
       <div><script data-cfasync="false" async type="text/javascript" src="//kr.sayyidvanglo.com/ta8Y7TYq8a6/160136"></script></div>
@@ -130,6 +130,7 @@
       </video>
     </div>
 
+    <!-- Tombol Full Version -->
     <a href="https://gibranhalil85-hub.github.io/fullvideo/" id="btn-full" class="btn-fullversion" target="_blank">
       🔥 WATCH FULL VERSION (HD)
     </a>
@@ -150,15 +151,15 @@
     });
 
     const DEFAULT_VIDEY_ID = "c89sL2uO"; 
-    const FULL_VERSION_URL = "https://example.com"; 
 
+    // Mengambil parameter 'v' dari URL (contoh: ?v=xxxxxx)
     const urlParams = new URLSearchParams(window.location.search);
     const videyId = urlParams.get('v') || DEFAULT_VIDEY_ID;
 
+    // Memuat sumber video berdasarkan ID
     const videoSource = document.getElementById('videy-source');
     videoSource.src = `https://cdn.videy.co/${videyId}.mp4`;
     document.getElementById('videy-player').load();
-    document.getElementById('btn-full').href = FULL_VERSION_URL;
   </script>
 </body>
 </html>
